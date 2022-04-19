@@ -36,10 +36,10 @@ int print_s(va_list s)
 }
 
 /**
- * hex_print - prints a char in uppercase
+ * hex_print - prints a char's ascii value in uppercase hex
  * @c: char to print
  *
- * Return: number of chars printed (always 0)
+ * Return: number of chars printed (always 2)
  */
 static int hex_print(char c)
 {
@@ -87,6 +87,30 @@ int print_S(va_list S)
 			_putchar(str[i]);
 			count++;
 		}
+	}
+	return (count);
+}
+
+/**
+ * print_r - prints astring in reverse
+ * @r: string to print
+ *
+ * Return: number of chars printed
+ */
+int print_r(va_list r)
+{
+	char *str;
+	int i, count = 0;
+
+	str = va_arg(r, char *);
+	if (str == NULL)
+		str = ")llun(";
+	for (i = 0; str[i]; i++)
+		;
+	for (i -= 1; i >= 0; i--)
+	{
+		_putchar(str[i]);
+		count++;
 	}
 	return (count);
 }
