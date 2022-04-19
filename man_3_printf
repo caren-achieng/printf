@@ -1,3 +1,4 @@
+
 ./" This is the manpage for the printf function
 .TH man 3 "19-04-2022" "_printf"
 
@@ -41,7 +42,7 @@ The variables to be printed are separated from the format string with a comma. E
 
 .SH AUTHOR
 Caren Achieng
-Ken Kamau
+
 
 
 

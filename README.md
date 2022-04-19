@@ -323,7 +323,6 @@ Function That Returns The Amount Of Indetifiers.
 
 ### Author
 Caren Achieng
-Ken Kamau
 
 ------------
 
